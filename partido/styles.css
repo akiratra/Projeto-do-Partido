@@ -1,0 +1,178 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+/* estilo do corpo */
+header {
+    position: fixed; /* Posição do Elemento */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Elemento alinhado ao centro */
+    padding: 20px; /* Espaçamento de 20px */
+    background-color: #000;
+    z-index: 1000; /* Permite estabelecer valores negativos */
+}
+
+.logo h1 { /* Estilo Logo Bitcoin */
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #FF5E57;
+}
+
+.logo img {
+    width: 60px; 
+    height: auto;
+    margin-right: 10px; 
+}
+
+/* Estilo NavBar */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+/* Estilo Nav ul */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li .button {
+    background-color: #FF5E57;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+nav ul li {
+    transition: transform 0.3s ease; 
+}
+
+nav ul li:hover {
+    transform: scale(1.1); 
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); 
+    padding-top: 100px; 
+}
+
+/* Card Vermelho */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #811313, #4e0404);
+    padding: 40px; 
+    border-radius: 20px;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.3);
+    width: calc(100% - 100px); 
+    margin: 50px;  
+    max-width: 1400px; 
+}
+
+
+@keyframes heroAnimation {
+    0% {
+        opacity: 0; 
+        transform: translateY(30px) scale(0.9); 
+    }
+    100% {
+        opacity: 1; 
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+.hero {
+    animation: heroAnimation 1s ease-out; 
+}
+
+
+.content {
+    max-width: 55%; 
+}
+
+.hashtags span {
+    background-color: #ff4949;
+    padding: 8px 12px; 
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 32px; 
+    line-height: 1.4;
+}
+
+p {
+    margin: 20px 0;
+    line-height: 1.8;
+    font-size: 18px; 
+}
+
+p {
+    margin-bottom: 20px; 
+    line-height: 1.8;
+}
+
+p:last-of-type {
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #000;
+    color: white;
+    padding: 12px 24px; 
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #333; 
+}
+
+
+.image img {
+    max-width: 600px; 
+    border-radius: 10px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+    background-color: #111; 
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px; 
+    color: #ffffff; 
+}
+
